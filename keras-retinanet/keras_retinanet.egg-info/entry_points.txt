@@ -1,0 +1,4 @@
+[console_scripts]
+retinanet-evaluate-coco = keras_retinanet.bin.evaluate_coco:main
+retinanet-train = keras_retinanet.bin.train:main
+
