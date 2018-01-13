@@ -1,5 +1,5 @@
 # Example:
-# python test.py -f ./examples/test.png -o ./output.png -w weights.h5 -c ./csvpaths/classes.csv
+# python test.py -f ./examples/test.png -o ./examples/output.png -w weights.h5 -c ./csvpaths/classes.csv
 
 import keras
 import keras.preprocessing.image

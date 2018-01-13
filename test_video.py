@@ -1,5 +1,5 @@
 # Example:
-# python test.py -f ./examples/video.mp4 -o ./output.png -w weights.h5 -c ./csvpaths/classes.csv
+# python test_video.py -f ./examples/video.mp4 -o ./examples/output_video.mp4 -w weights.h5 -c ./csvpaths/classes.csv
 
 import keras
 import keras.preprocessing.image
@@ -57,7 +57,7 @@ def parse(argv):
 def params(argv):
 	args = parse(argv)
 	p = dict()
-	p['output_photo'] = args['output_path']
+	p['output'] = args['output_path']
 	p['video'] = args['input_path']
 	p['weights'] = args['weights_path']
 	p['resnet'] = 50
@@ -145,18 +145,26 @@ def main(argv):
 	
 	cap = cv2.VideoCapture(p['video'])
 	
+	fourcc = cv2.VideoWriter_fourcc(*'MP4V')
+	out = cv2.VideoWriter(p['output'],fourcc, 20.0, (1920,1080))
+	
 	while(cap.isOpened()):
 		ret, frame = cap.read()
 		
+		if ret != True:
+			break
+			
 		draw = logopreds(prediction_model,frame,p)
 		
 		# Display the resulting frame
 		cv2.imshow('frame',draw)
+		out.write(draw)
 		if cv2.waitKey(1) & 0xFF == ord('q'):
 			break
 
 	# When everything done, release the capture
 	cap.release()
+	out.release()
 	cv2.destroyAllWindows()
 	
 	#showlogo(prediction_model, p['input_photo'],p['output_photo'],p)
