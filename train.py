@@ -1,5 +1,5 @@
 # Example:
-# python train.py -n test -c classes.csv -t retina-train.csv -v retina-valid.csv
+# python train.py -n test -c ./csvpaths/classes.csv -t ./csvpaths/retina-train.csv -v ./csvpaths/retina-valid.csv
 
 
 import argparse
