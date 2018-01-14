@@ -45,5 +45,7 @@ Keras implementation of RetinaNet object detection on logo detection. Forked on 
 ## Dependencies
 
 Tensorflow (https://www.tensorflow.org/install/).
+
 Keras 2.1.2 `pip install keras` install after Tensorflow.
+
 OpenCV `pip install opencv-python`.
