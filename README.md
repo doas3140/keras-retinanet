@@ -26,7 +26,7 @@ Keras implementation of RetinaNet object detection on logo detection. Forked on 
 
 1) Make sure to complete Preparation steps first.
    Make sure to do 2-4 Training steps. 
-2) Train your own model or download weights from [here]().
+2) Train your own model or download weights from [here](https://drive.google.com/file/d/1eDybynuRoSvTXPMRqjeHLFliI42ZP4tx/view?usp=sharing).
 3) In this repository run command `python evaluate.py -w weights.h5 -c ./csvpaths/classes.csv -t ./csvpaths/retina-test.csv -o ./evalkit/classification.txt`.
    `-w` is path to weights and `-o` is output path.
    In `evalkit` folder `classification.txt` file should appear.
@@ -37,7 +37,7 @@ Keras implementation of RetinaNet object detection on logo detection. Forked on 
 ## Evaluating single photo or video
 
 1) Make sure to complete Preparation steps first.
-2) Train your own model or download weights from [here]().
+2) Train your own model or download weights from [here](https://drive.google.com/file/d/1eDybynuRoSvTXPMRqjeHLFliI42ZP4tx/view?usp=sharing).
 3) To evaluate photo run command `python test.py -f ./examples/test.png -o ./examples/output.png -w weights.h5 -c ./csvpaths/classes.csv`.
    Where `-f` is your photo, `-o` is output photo, `-w` is weights.
 4) To evaluate video run command `python test_video.py -f ./examples/video.mp4 -o ./examples/output_video.mp4 -w weights.h5 -c ./csvpaths/classes.csv`.
