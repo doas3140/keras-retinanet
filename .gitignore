@@ -1,0 +1,5 @@
+__pycache__/
+eval/__pycache__/
+*.pyc
+/.cache
+scripts/__pycache__/
