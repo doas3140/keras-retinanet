@@ -1,5 +1,5 @@
 # Keras RetinaNet Logo Detection
-Keras implementation of RetinaNet object detection on logo detection. Forked on (https://github.com/fizyr/keras-retinanet)
+Keras implementation of RetinaNet object detection on logo detection. Forked on https://github.com/fizyr/keras-retinanet. Original paper is [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002).
 
 ## Preparation
 
@@ -41,3 +41,9 @@ Keras implementation of RetinaNet object detection on logo detection. Forked on 
 3) To evaluate photo run command `python test.py -f ./examples/test.png -o ./examples/output.png -w weights.h5 -c ./csvpaths/classes.csv`.
    Where `-f` is your photo, `-o` is output photo, `-w` is weights.
 4) To evaluate video run command `python test_video.py -f ./examples/video.mp4 -o ./examples/output_video.mp4 -w weights.h5 -c ./csvpaths/classes.csv`.
+
+## Dependencies
+
+Tensorflow (https://www.tensorflow.org/install/).
+Keras 2.1.2 `pip install keras` install after Tensorflow.
+OpenCV `pip install opencv-python`.
