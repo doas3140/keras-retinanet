@@ -1,6 +1,8 @@
 # Keras RetinaNet Logo Detection
 Keras implementation of RetinaNet object detection on logo detection. Forked on https://github.com/fizyr/keras-retinanet. Original paper is [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002).
 
+![alt text](https://github.com/doas3140/keras-retinanet-logo/blob/master/examples/output_video.gif "output_video.gif")  
+
 ## Preparation
 
 1) Clone this repository.
