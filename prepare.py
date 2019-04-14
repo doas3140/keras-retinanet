@@ -215,67 +215,15 @@ def main(argv):
     p = parse(argv)
 
     class_csv(dataset_path=p['flicker32path'], txt_out=p['class_name'])
-    flickr32_csv(txt_name='valset.relpaths.txt', txt_out=p['valid_name'])
+    flickr32_csv(txt_name='valset.relpaths.txt', dataset_path=p['flicker32path'], txt_out=p['valid_name'])
     print()
-    flickr32_csv(txt_name='trainset.relpaths.txt', txt_out=p['train_name'])
+    flickr32_csv(txt_name='trainset.relpaths.txt', dataset_path=p['flicker32path'], txt_out=p['train_name'])
     print()
-    flickr32_csv(txt_name='testset.relpaths.txt', txt_out=p['test_name'])
+    flickr32_csv(txt_name='testset.relpaths.txt', dataset_path=p['flicker32path'], txt_out=p['test_name'])
     print()
-    flickr32plus_csv(txt_out=p['train_name'])
+    flickr32plus_csv(flickr32plus_folder_path=p['logos32path'], txt_out=p['train_name'])
     
 
 
 if __name__ == '__main__':
     main(sys.argv[1:])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
